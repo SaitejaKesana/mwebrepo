@@ -1,0 +1,17 @@
+{
+	"AWSTemplateFormatVersion": "2010-09-09",
+	"Description": "Template-EC2Instance Launching-1",
+	"Resources": {
+		"AWSEc2Instance": {
+			"Type": "AWS::EC2::Instance",
+			"Properties": {
+				"ImageId": "ami-00eeedc4036573771",
+				"InstanceType": "t2.nano",
+				"SubnetId": "subnet-085f2d02d32f41ce5",
+				"SecurityGroupIds": ["sg-07a2c1dcc7628987c"],
+				"KeyName": "Ohio_KP_1"
+			}
+
+		}
+	}
+}
